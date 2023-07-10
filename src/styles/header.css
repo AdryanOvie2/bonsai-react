@@ -3,9 +3,21 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: .5rem;
 }
     header .header-logo{
         width: 100%;
         text-align: center;
     }
+
+@media (width >= 700px){
+    header{
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+    header .header-logo{
+        width: auto;
+        text-align: center;
+    }
+}
