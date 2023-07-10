@@ -1,0 +1,21 @@
+.login{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-gray);
+    gap: 1rem;
+} .login a{
+    font-weight: bold;
+    border-radius: 3px;
+    padding: .5rem 1rem;
+}
+    .login-btnOutline{
+        outline: 1px solid var(--color-green);
+        color: var(--color-green);
+    }
+    .login-btnGreen{
+        color: var(--color-white);
+        background-color: var(--color-green);
+    }

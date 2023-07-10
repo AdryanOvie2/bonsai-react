@@ -1,0 +1,11 @@
+header{
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+}
+    header .header-logo{
+        width: 100%;
+        text-align: center;
+    }
