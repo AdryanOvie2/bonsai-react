@@ -1,0 +1,36 @@
+.box{
+    padding: 2rem;
+    box-shadow: 1px 1px 5px lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}   .box-title{
+    font-weight: 600;
+    color: var(--color-gray);
+}   .box-content{
+    color: var(--color-gray);
+    font-size: .9rem;
+}
+    .box-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-value{
+        font-size: 2rem;
+        color: var(--color-gray);
+        font-weight: 600;
+    }
+    .box-right span{
+        color: var(--color-gray);
+        font-size: .7rem;
+        text-transform: uppercase;
+    }
+
+@media (width >= 700px){
+    .box{
+        flex-direction: row;
+    }
+}
