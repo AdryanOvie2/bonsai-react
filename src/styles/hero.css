@@ -16,13 +16,19 @@
         gap: 2rem;
     }
    .hero-left p{
-        font-size: 2rem;
+        font-size: 3rem;
+        font-family: serif;
+        color: var(--color-gray);
     }
     .hero-left p span{
+        font-family: serif;
         color: var(--color-green);
     }
     .hero-right a{
-        padding: .5rem 2rem;
+        padding: 1rem 2.5rem;
+        font-size: .7rem;
+        font-weight: 700;
+        border-radius: 5px;
     }
 
 @media (width >= 700px){
@@ -33,5 +39,6 @@
 @media (width >= 990px){
     .hero-content{
         flex-direction: row;
+        justify-content: space-between;
     }
 }
