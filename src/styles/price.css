@@ -1,0 +1,48 @@
+.section-price{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.header-price{
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}.header-price > h2{
+    text-align: center;
+    width: 100%;
+}
+.header-switch{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cards{
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (width >= 700px){
+    .section-price{
+        width: 70%;
+        margin: auto;
+    }
+    .header-price{
+        justify-content: space-between;
+    }
+    .header-price > h2, .header-switch{
+        width: auto;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(auto, 1fr);
+    }
+}
