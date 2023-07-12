@@ -26,6 +26,7 @@
 .cards{
     padding: 0 1rem;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 2rem;
 }
@@ -43,8 +44,6 @@
         width: auto;
     }
     .cards{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(auto, 1fr);
+        flex-direction: row;
     }
 }

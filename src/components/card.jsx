@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import '../styles/card.css'
 
 // eslint-disable-next-line react/prop-types

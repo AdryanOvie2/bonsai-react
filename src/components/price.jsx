@@ -3,6 +3,7 @@ import Switch from './switch'
 import Card from './card'
 
 function Price(){
+    // const basic = ["Services Basic 1", "Services Basic 2", "Services Basic 3", "Services Basic 4"];
     return(
         <section className='section-price'>
             <div className="header-price">
@@ -19,6 +20,7 @@ function Price(){
                 <Card cardTitle={'Workflow3'} priceCost={33}/>
             </div>
         </section>
+        
     );
 }
 
