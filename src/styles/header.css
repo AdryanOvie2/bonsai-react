@@ -1,10 +1,16 @@
 header{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
     padding: 1rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: .5rem;
+    z-index: 5;
+    backdrop-filter: saturate(180%) blur(5px);
+    background: hsla(0,0%,100%,.8);
 }
     header .header-logo{
         width: 100%;

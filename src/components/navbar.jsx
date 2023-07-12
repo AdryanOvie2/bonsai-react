@@ -1,29 +1,25 @@
 import '../styles/navbar.css'
 import 'boxicons'
+import DropBtn from './dropbtn'
+
+const itemLis = [
+    { id: 1, title: 'Pricing' , hrf: '#'},
+    { id: 2, title: 'Reviews' , hrf: '#'},
+]
 
 function Navbar (){
+    const menuLi = itemLis.map(itemLi =>
+        <li key={itemLi.id}>
+            <a href={itemLi.hrf}>
+            {itemLi.title}
+            </a>
+        </li>
+      );
     return(
         <ul className='navbar'>
-            <li className='dropbtn'>
-                Product
-                <box-icon className='icon-down-arrow'size='xs' name='chevron-down' type='solid' color='#000' ></box-icon>
-                <div className="dropdown-content">
-                    <a href="#">Product 1</a>
-                    <a href="#">Product 2</a>
-                    <a href="#">Product 3</a>
-                </div>
-            </li>
-            <li className='dropbtn'>
-                <p>Templates</p>
-                <box-icon className='icon-down-arrow'size='xs' name='chevron-down' type='solid' color='#000' ></box-icon>
-                <div className="dropdown-content">
-                    <a href="#">Template 1</a>
-                    <a href="#">Template 2</a>
-                    <a href="#">Template 3</a>
-                </div>
-            </li>
-            <li>Pricing</li>
-            <li>Reviews</li>
+            <DropBtn title='Product'/>
+            <DropBtn title='Template'/>
+            {menuLi}
         </ul>
     );
 }
